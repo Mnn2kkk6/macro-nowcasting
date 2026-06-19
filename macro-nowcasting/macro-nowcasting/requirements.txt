@@ -1,32 +1,32 @@
 # Data
-fredapi==0.5.1
-pandas==2.2.2
-numpy==1.26.4
-python-dotenv==1.0.1
-pyyaml==6.0.1
-requests==2.31.0
+fredapi
+pandas
+numpy
+python-dotenv
+pyyaml
+requests
 
 # Stats / Econometrics
-statsmodels==0.14.2
-scikit-learn==1.4.2
+statsmodels
+scikit-learn
 
 # ML
-lightgbm==4.3.0
-xgboost==2.0.3
-shap==0.45.0
+lightgbm
+xgboost
+shap
 
 # DL
-torch==2.3.0
-pytorch-forecasting==1.0.0   # Temporal Fusion Transformer
+torch
+pytorch-forecasting
 
 # Visualization
-matplotlib==3.8.4
-seaborn==0.13.2
-plotly==5.22.0
+matplotlib
+seaborn
+plotly
 
 # App
-streamlit==1.35.0
+streamlit
 
 # Notebook
-jupyter==1.0.0
-ipykernel==6.29.4
+jupyter
+ipykernel
