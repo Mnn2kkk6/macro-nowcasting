@@ -1,5 +1,5 @@
 fred:
-  start_date: "1990-01-01"
+  start_date: "2023-01-01"
   end_date: null  # null = today
 
   target_series:
