@@ -1,0 +1,32 @@
+# Data
+fredapi
+pandas
+numpy
+python-dotenv
+pyyaml
+requests
+
+# Stats / Econometrics
+statsmodels
+scikit-learn
+
+# ML
+lightgbm
+xgboost
+shap
+
+# DL
+torch
+pytorch-forecasting
+
+# Visualization
+matplotlib
+seaborn
+plotly
+
+# App
+streamlit
+
+# Notebook
+jupyter
+ipykernel

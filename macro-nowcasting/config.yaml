@@ -1,0 +1,29 @@
+fred:
+  start_date: "2023-01-01"
+  end_date: null  # null = today
+
+  target_series:
+    gdp: "GDPC1"          # Real GDP (quarterly)
+    cpi: "CPIAUCSL"       # CPI (monthly)
+    unemployment: "UNRATE" # Unemployment rate (monthly)
+
+  leading_indicators:
+    payrolls: "PAYEMS"    # Nonfarm payrolls (monthly)
+    claims: "ICSA"        # Initial jobless claims (weekly)
+    indpro: "INDPRO"      # Industrial production index (monthly)
+    retail: "RSAFS"       # Retail sales (monthly)
+    housing: "HOUST"      # Housing starts (monthly)
+    sentiment: "UMCSENT"  # Consumer sentiment Michigan (monthly)
+    yield_curve: "T10Y2Y" # 10Y-2Y Treasury spread (daily)
+    m2: "M2SL"            # Money supply M2 (monthly)
+    ppi: "PPIACO"         # Producer price index (monthly)
+
+forecasting:
+  horizons: [1]            # Chỉ chạy dự báo 1 tháng tới thay vì [1, 2, 4]
+  backtest_start: "2023-01-01" # Chỉ backtest từ 2020 (dữ liệu ngắn hơn, chạy nhanh hơn hẳn)
+  walk_forward_step: 3      # Nhảy 3 tháng mới train lại 1 lần
+
+features:
+  lag_periods: [1, 2, 3, 4, 6, 8, 12]   # lag in months
+  rolling_windows: [3, 6, 12]            # rolling mean/std windows in months
+  resample_freq: "MS"                    # resample high-freq to month-start
