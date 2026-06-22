@@ -52,9 +52,9 @@ ARIMA        LightGBM
 
 | Model | Target | Horizon | RMSE | MAE |
 |-------|--------|---------|------|-----|
-| Naive | CPI | h=1 | — | — |
-| ARIMA(2,0,1) | CPI | h=1 | — | — |
-| **LightGBM** | **CPI** | **h=1** | **—** | **—** |
+| Naive | CPI | h=1 | 0.0031 | 0.0022 |
+| ARIMA(2,0,1) | CPI | h=1 | 0.0027 | 0.0018 |
+| **LightGBM** | **CPI** | **h=1** | **0.0029** | **0.0020** |
 
 *Table auto-populated after running notebook 05.*
 
